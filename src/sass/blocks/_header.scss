@@ -1,8 +1,12 @@
 .header {
-
+	background: #363740;
 		/* .header__wrapper */
 
 		&__wrapper {
+			min-height: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
 
 		/* .header__contacts */
@@ -13,6 +17,20 @@
 		/* .header__user-avatar */
 
 		&__user-avatar {
+			svg {
+				path {
+					transition: all .3s linear;
+				}
+			}
+			&:hover {
+				svg {
+					path {
+						&:first-child {
+							fill: #2196F3;
+						}
+					}
+				}
+			}
 		}
 }
 

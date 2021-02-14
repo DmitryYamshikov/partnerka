@@ -5,7 +5,7 @@
 @import "base/mixins";
 
 * {
-    font-family: 'NotoSansJP';
+    font-family: "NotoSansJP";
     margin: 0;
     padding: 0;
 }
@@ -16,9 +16,18 @@ body {
 .container {
     width: 1170px;
     margin: 0 auto;
-    
 }
-
+.page-content {
+    margin-top: 60px;
+    margin-bottom: 300px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 72px;
+    text-align: center;
+    color: #0874cc;
+}
 @import "blocks/enter";
 @import "blocks/form-wrapper";
 @import "blocks/form";
@@ -27,3 +36,5 @@ body {
 @import "blocks/logo";
 @import "blocks/menu";
 @import "blocks/contacts";
+@import "blocks/form-profile";
+@import "blocks/profile";

@@ -1,2 +1,34 @@
 .menu {
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        margin: 0 -20px;
+        li {
+            margin: 0 20px;
+            padding: 10px 0;
+            a {
+                font-size: 20px;
+                line-height: 29px;
+                color: #ffffff;
+                display: block;
+                height: 100%;
+                border: 3px solid transparent;
+                transition: all 0.3s linear;
+                &:hover {
+                    color: #2196f3;
+                    border-bottom-color: #2196f3;
+                    text-decoration: none;
+                }
+            }
+        }
+        li.active {
+            a {
+                color: #2196f3;
+                border-bottom-color: #2196f3;
+            }
+        }
+    }
 }

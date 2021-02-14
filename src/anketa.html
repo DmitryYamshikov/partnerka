@@ -1,0 +1,104 @@
+    @@include('./_head.html')
+    <body>
+        @@include('./_header.html')
+        <div class="page-content">
+            <div class="container">
+                <h1>Анкета</h1>
+            <div class="profile">
+                <div class="profile__left">
+                    <div class="profile__img">
+                        <img src="img/img/phpto.jpg" alt="photo">
+                    </div>
+                    <div class="profile__descr">
+                        <div class="profile__name">Иопенко Антон Валериевич / Агент</div>
+                        <button class="btn">Изменить фото</button>
+                        <button class="btn btn_change">Изменить пароль</button>
+                    </div>
+                </div>
+                <div class="profile__right">
+                    <form class="profile__form form-profile">
+                        <div class="form-profile__tabs-header">
+                            <span class='active'>Физлицо</span>
+                            <span>ИП</span>
+                            <span>ООО</span>
+                        </div>
+                        <div class="form-profile__tabs-wrapper">
+                            <div class="form-profile__tabs-item active">
+                                <div class="form-profile__row">
+                                    <label>Паспорт<input type="text" name='Pasport' value='4513393032' size="10"></label>
+                                    <label>СНИЛС<input type="text" name='SNILS'value='4513393032'></label>
+                                </div>
+                                <div class="form-profile__row">
+                                    <label>ИНН<input type="text" name="INN" value='632129836915' ></label>
+                                    <label>ОГРН<input type="text" name="OGRN" value='320631300049810'></label>
+                                    <label>БИК<input type="text" name="BIK" value='044525999'></label>
+                                    <label>КПП<input type="text" name="KPP" value='044168211'></label>
+                                </div>
+                                <div class="form-profile__row">
+                                    <label>Наименование банка<input type="text" name="Bank-name" value='ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"'></label>
+                                </div>
+                                <div class="form-profile__row">
+                                    <label>Корреспондентский счет<input type="text" name="Kor-score" value='30101810845250000999'></label>
+                                    <label>Лицевой счет<input type="text" name="Lic-score" value='40802810714500039562'></label>
+                                </div>
+                                <div class="form-profile__row">
+                                    <input type="checkbox" id='checkbox-privacy' name='checkbox' required>
+                                    <label for="checkbox-privacy">Наличие электронного документооборота</label>
+                                </div>
+                            </div>
+                        <div class="form-profile__tabs-item">
+                            <div class="form-profile__row">
+                                <label>Паспорт<input type="text" name='Pasport' value='4513393032'></label>
+                                <label>СНИЛС<input type="text" name='SNILS'value='4513393032'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <label>ИНН<input type="text" name="INN" value='632129836915'></label>
+                                <label>ОГРН<input type="text" name="OGRN" value='320631300049810'></label>
+                                <label>БИК<input type="text" name="BIK" value='044525999'></label>
+                                <label>КПП<input type="text" name="KPP" value='044168211'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <label>Наименование банка<input type="text" name="Bank-name" value='ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <label>Корреспондентский счет<input type="text" name="Kor-score" value='30101810845250000999'></label>
+                                <label>Лицевой счет<input type="text" name="Lic-score" value='40802810714500039562'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <input type="checkbox" id='checkbox-privacy' name='checkbox' required>
+                                <label for="checkbox-privacy">Наличие электронного документооборота</label>
+                            </div>
+                        </div>
+                        <div class="form-profile__tabs-item">
+                            <div class="form-profile__row">
+                                <label>Паспорт<input type="text" name='Pasport' value='4513393032'></label>
+                                <label>СНИЛС<input type="text" name='SNILS'value='4513393032'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <!-- <label>ИНН<input type="text" name="INN" value='632129836915'></label>
+                                <label>ОГРН<input type="text" name="OGRN" value='320631300049810'></label>
+                                <label>БИК<input type="text" name="BIK" value='044525999'></label>
+                                <label>КПП<input type="text" name="KPP" value='044168211'></label> -->
+                            </div>
+                            <div class="form-profile__row">
+                                <label>Наименование банка<input type="text" name="Bank-name" value='ТОЧКА ПАО БАНКА "ФК ОТКРЫТИЕ"'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <label>Корреспондентский счет<input type="text" name="Kor-score" value='30101810845250000999'></label>
+                                <label>Лицевой счет<input type="text" name="Lic-score" value='40802810714500039562'></label>
+                            </div>
+                            <div class="form-profile__row">
+                                <input type="checkbox" id='checkbox-privacy' name='checkbox' required>
+                                <label for="checkbox-privacy">Наличие электронного документооборота</label>
+                            </div>
+                        </div>
+                        </div>
+                        <button disabled class="btn">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>

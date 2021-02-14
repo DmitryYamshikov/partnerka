@@ -1,0 +1,268 @@
+.form {
+    padding-bottom: 55px;
+    max-width: 90vw;
+    &.active {
+        display: block;
+    }
+    label {
+        width: 100%;
+        position: relative;
+    }
+    /* .form_login */
+    a {
+        font-size: 18px;
+        line-height: 26px;
+        color: #2196f3;
+    }
+    &_login {
+        display: none;
+        width: 566px;
+        label {
+            width: 100%;
+            position: relative;
+        }
+        a {
+            align-self: flex-start;
+        }
+    }
+    &__label {
+        &_ico-pass {
+            &:before {
+                border-right: 1px solid #e3e3e3;
+                position: absolute;
+                content: "";
+                display: block;
+                top: 2px;
+                left: 0;
+                height: calc(100% - 4px);
+                width: 64px;
+                background-image: url(../img/ico/pass.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 1;
+                cursor: pointer;
+            }
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                top: 0;
+                right: 22px;
+                height: 100%;
+                width: 16px;
+                background-image: url(../img/ico/glaz.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            & + a {
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                align-self: flex-start;
+                margin-top: 10px;
+            }
+        }
+        &_ico-mail {
+            &:before {
+                border-right: 1px solid #e3e3e3;
+                position: absolute;
+                content: "";
+                display: block;
+                top: 2px;
+                left: 0;
+                height: calc(100% - 4px);
+                width: 64px;
+                background-image: url(../img/ico/mail.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 1;
+                cursor: pointer;
+            }
+        }
+    }
+    /* .form_pass-recovery */
+
+    &_pass-recovery {
+        width: 566px;
+        display: none;
+    }
+
+    /* .form_registration */
+
+    &_registration {
+        display: none;
+        width: 760px;
+    }
+
+    /* .form__title */
+
+    &__title {
+        height: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #e3e3e3;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 43px;
+        text-transform: uppercase;
+        color: #242424;
+        margin-bottom: 50px;
+    }
+
+    /* .form__row */
+
+    &__row {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+        padding: 0 80px;
+        &_horizont {
+            flex-direction: row;
+        }
+    }
+
+    /* .form__input */
+
+    &__input {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        padding: 17px 19px;
+        font-size: 18px;
+        line-height: 26px;
+        &:hover {
+            & + .form__hint {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        /* .form__input_mail */
+
+        &_mail {
+            position: relative;
+            padding-left: 85px;
+        }
+
+        /* .form__input_pass */
+
+        &_pass {
+            padding-left: 85px;
+        }
+    }
+    textarea {
+        width: 100%;
+        border: 1px solid #e3e3e3;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 20px 19px;
+        font-size: 18px;
+        line-height: 26px;
+        resize: none;
+        height: 140px;
+    }
+
+    /* .form__btn */
+
+    &__btn {
+        width: 100%;
+        height: 60px;
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    /* .form__label */
+    &__hint {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s linear;
+        padding: 8px 12px 8px 20px;
+        min-height: 40px;
+        background: #efefef;
+        border-radius: 4px;
+        min-width: 200px;
+        width: max-content;
+        max-width: 266px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(100% - 50px);
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            border: 5px solid transparent;
+            border-right: 5px solid #efefef;
+        }
+    }
+    &__label {
+        align-self: flex-start;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 6px;
+    }
+    input[type="checkbox"] {
+        display: none;
+        &:checked {
+            & + label {
+                &:after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    input[type="checkbox"] + label {
+        font-size: 18px;
+        line-height: 26px;
+        color: #242424;
+        padding-left: 48px;
+        position: relative;
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+        }
+        &:after {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s linear;
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-image: url(../../img/ico/check.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.link-registr {
+    align-self: center;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}

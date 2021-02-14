@@ -2,10 +2,79 @@
     <body>
         <div class="enter">
             <div class="form-wrapper">
-                <form class="form form_login">
-                    
+                <form class="form form_login active">
+                    <div class="form__title">Авторизация</div>
+                    <div class="form__row">
+                        <label class="form__label_ico-mail"><input type="text" name='mail' placeholder="example@mail.ru" required class="form__input form__input_mail"></label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label_ico-pass"><input type="password" name='password' placeholder="Password" class="form__input form__input_pass"></label>
+                        <a href="#" recover-pass >Забыли пароль?</a>
+                    </div>
+                    <div class="form__row">
+                        <button class="btn form__btn">войти</button>
+                    </div>
+                    <div class="form__row">
+                        <div class="link-registr">Вы не зарегистрированы? <a href="#">Регистрация</a></div>
+                    </div>
+                </form>
+                <form class="form form_pass-recovery">
+                    <div class="form__title">ВОССТАНОВЛЕНИЕ ПАРОЛЯ</div>
+                    <div class="form__row">
+                        <span class="form__label">Введите адрес электронной почты</span>
+                        <label class="form__label_ico-mail">
+                            <input type="text" id="mail-pass-recovery" name='mail' placeholder="example@mail.ru" required class="form__input form__input_mail">
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <button class="btn form__btn">Восстановить</button>
+                    </div>
+                </form>
+                <form class="form form_registration">
+                    <div class="form__title">Регистрация</div>
+                    <div class="form__row">
+                        <input type="text" name='inn' placeholder="ИНН" class='form__input'>
+                        <div class="form__hint">Укажите ИНН компании</div>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" name="kompany name" placeholder="Наименование компании" class='form__input'>
+                        <div class="form__hint">Укажите наименование компании</div>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" name="name" placeholder="ФИО *" required class='form__input'>
+                        <div class="form__hint">Укажите ФИО контактного лица</div>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" name='phone' placeholder="Телефон *" required class='form__input'>
+                        <div class="form__hint">Укажите номер телефона по которому с вами можно связаться</div>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" name="email" placeholder="E-mail *" required class='form__input'>
+                        <div class="form__hint">Укажите ваш контактный E-mail</div>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" name="password" placeholder="Пароль *" required class='form__input'>
+                        <div class="form__hint">Придумайте пароль не менее 8 символов</div>
+                    </div>
+                    <div class="form__row">
+                        <input type="text" name="password-repeat" placeholder="Повторите пароль" class='form__input'>
+                    </div>
+                    <div class="form__row">
+                        <textarea name="comment" placeholder="Комментарий"></textarea>
+                    </div>
+                    <div class="form__row form__row_horizont">
+                        <input type="checkbox" id='checkbox-privacy' name='checkbox' required>
+                        <label for="checkbox-privacy">Я принимаю 
+                            <a href="#">пользовательское соглашение</a> и даю согласие на обработку 
+                            <a href="#">персональных данных</a>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <button class="btn form__btn">Восстановить</button>
+                    </div>
                 </form>
             </div>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -1,0 +1,31 @@
+.docs-preview {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    & > div {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 19px;
+    }
+    a[download] {
+        font-size: 16px;
+        line-height: 23px;
+        color: #2196f3;
+        transition: all .3s linear;
+        padding-left: 11px;
+        position: relative;
+        &:before {
+            display: block;
+            content: '';
+            position: absolute;
+            left:0;
+            top:50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 13px;
+            background-image: url(../img/ico/screpka.svg);
+        }
+    }
+}

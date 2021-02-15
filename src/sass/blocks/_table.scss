@@ -1,0 +1,96 @@
+.table {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #b1b1b1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    &__title,
+    &__row {
+        display: flex;
+        background: #0874cc;
+        border-radius: 3px 3px 0px 0px;
+        min-height: 40px;
+    }
+    &__row {
+        background-color: #fff;
+        border-bottom: 1px solid #b1b1b1;
+        span {
+            font-size: 12px;
+            line-height: 17px;
+            color: #242424;
+        }
+        &:last-child {
+            border: none;
+        }
+        a[download] {
+            position: relative;
+            padding-left: 11px;
+            margin: 0 5px;
+            font-size: 12px;
+            line-height: 17px;
+            color: #2196f3;
+            transition: all 0.3s linear;
+            &:hover {
+                color: #004b88;
+                text-decoration: none;
+                &:before {
+                    background-image: url(../img/ico/download2.svg);
+                }
+            }
+            &:before {
+                transition: all 0.3s linear;
+                display: block;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 9px;
+                width: 8.5px;
+                background-image: url(../img/ico/download.svg);
+            }
+        }
+    }
+}
+.docs-table {
+    .table {
+        &__title,
+        &__row {
+            display: flex;
+            background: #0874cc;
+            border-radius: 3px 3px 0px 0px;
+            min-height: 40px;
+            span {
+                padding: 12px 24px 12px 24px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #ffffff;
+                flex: 0 0 30%;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                &:nth-child(2) {
+                    flex: 0 0 40%;
+                    /* justify-content: center; */
+                }
+                &:last-child {
+                    justify-content: flex-end;
+                }
+            }
+        }
+        &__row {
+            background-color: #fff;
+            border-bottom: 1px solid #b1b1b1;
+            span {
+                font-size: 12px;
+                line-height: 17px;
+                color: #242424;
+            }
+        }
+    }
+}

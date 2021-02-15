@@ -14,6 +14,14 @@
         background: #0874cc;
         border-radius: 3px 3px 0px 0px;
         min-height: 40px;
+        span {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
     &__row {
         background-color: #fff;
@@ -92,5 +100,24 @@
                 color: #242424;
             }
         }
+    }
+}
+.sotrudniki-table {
+    span[data=id]{
+        padding-left: 28px;
+        flex: 0 0 16%;
+    }
+    span[data=mail]{
+        flex: 0 0 33%;
+    }
+    span[data=fio]{
+        flex: 0 0 21%;
+    }
+    span[data=phone]{
+        flex: 0 0 21%;
+    }
+    span[data=agent]{
+        padding-right: 12px;
+        flex: 0 0 9%;
     }
 }

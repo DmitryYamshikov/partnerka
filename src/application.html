@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ru">
     @@include('./_head.html')
     <body>
         @@include('./_header.html')
@@ -8,39 +10,38 @@
                     <div class="form__body">
                         <div class="form__left">
                             <div class="form__row">
-                                <input type="text" name="INN" placeholder="ИНН *" required>
+                                <input type="text" name="INN" placeholder="ИНН *" required />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="company-name" placeholder="Наименование *" required>
+                                <input type="text" name="company-name" placeholder="Наименование *" required />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="OGRN" placeholder="ОГРН">
+                                <input type="text" name="OGRN" placeholder="ОГРН" />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="OKVED" placeholder="ОКВЭД">
+                                <input type="text" name="OKVED" placeholder="ОКВЭД" />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="director-name" placeholder="ФИО руководителя *" required>
+                                <input type="text" name="director-name" placeholder="ФИО руководителя *" required />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="phone" placeholder="Тел. Контактного лица *" required>
+                                <input type="text" name="phone" placeholder="Тел. Контактного лица *" required />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="email" placeholder="E-mail контактного лица *" required>
+                                <input type="text" name="email" placeholder="E-mail контактного лица *" required />
                             </div>
                             <div class="form__row">
-                                <input type="text" name="city" placeholder="Город *" required>
+                                <input type="text" name="city" placeholder="Город *" required />
                             </div>
                             <div class="form__row">
                                 <textarea name="bank-comment" placeholder="Комментарий Банка"></textarea>
                             </div>
                             <div class="form__row_horizont">
                                 <span>Криптоконтейнер налоговой </span>
-                                <label class="btn file">Выбрать файл<input type="file" name='kriptocontainer'></label>
+                                <label class="btn file">Выбрать файл<input type="file" name="kriptocontainer" /></label>
                             </div>
                             <div class="form__row_horizont">
-                                
-                                <label class='label-date'>Дата планового звонка<input type="date" name='date'></label>
+                                <label class="label-date">Дата планового звонка<input type="date" name="date" /></label>
                             </div>
                             <div class="form__row">
                                 <div class="form__descr">
@@ -52,7 +53,9 @@
                                         <li>ИНН</li>
                                     </ol>
                                 </div>
-                                <label class="btn file">Прикрепить файлы<input type="file" class="btn" name="otherdiles"></label>
+                                <label class="btn file"
+                                    >Прикрепить файлы<input type="file" class="btn" name="otherdiles"
+                                /></label>
                             </div>
                         </div>
                         <div class="form__right">
@@ -60,88 +63,87 @@
                                 <div class="form__right-title">Выберите банк</div>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-1' name='sberbanr'>
+                                <input type="checkbox" id="bank-1" name="sberbanr" />
                                 <label for="bank-1">Сбербанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-2' name='delobank'>
+                                <input type="checkbox" id="bank-2" name="delobank" />
                                 <label for="bank-2">ДелоБанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-3' name='uralsib'>
+                                <input type="checkbox" id="bank-3" name="uralsib" />
                                 <label for="bank-3">Уралсиб</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-4' name='otkrutie'>
+                                <input type="checkbox" id="bank-4" name="otkrutie" />
                                 <label for="bank-4">Открытие</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-5' name='promsvyazbank'>
+                                <input type="checkbox" id="bank-5" name="promsvyazbank" />
                                 <label for="bank-5">Промсвязьбанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-6' name='loko-bank'>
-                                <label for="bank-6">Локо-банк	</label>
+                                <input type="checkbox" id="bank-6" name="loko-bank" />
+                                <label for="bank-6">Локо-банк </label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-7' name='modulbank'>
+                                <input type="checkbox" id="bank-7" name="modulbank" />
                                 <label for="bank-7">Модульбанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-8' name='raifaizenbank'>
+                                <input type="checkbox" id="bank-8" name="raifaizenbank" />
                                 <label for="bank-8">Райффайзенбанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-9' name='Bank Peterburg'>
+                                <input type="checkbox" id="bank-9" name="Bank Peterburg" />
                                 <label for="bank-9">Банк Санкт-Петербург</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-10' name='alfabank'>
-                                <label for="bank-10">Альфа-Банк	</label>
+                                <input type="checkbox" id="bank-10" name="alfabank" />
+                                <label for="bank-10">Альфа-Банк </label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-11' name='RosBank'>
+                                <input type="checkbox" id="bank-11" name="RosBank" />
                                 <label for="bank-11">Росбанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-12' name='ubrir'>
+                                <input type="checkbox" id="bank-12" name="ubrir" />
                                 <label for="bank-12">УБРиР</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-13' name='raifaizenbank'>
+                                <input type="checkbox" id="bank-13" name="raifaizenbank" />
                                 <label for="bank-13">Райффайзенбанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-14' name='zauberbank'>
+                                <input type="checkbox" id="bank-14" name="zauberbank" />
                                 <label for="bank-14">Заубер Банк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-15' name='Sovkombank'>
+                                <input type="checkbox" id="bank-15" name="Sovkombank" />
                                 <label for="bank-15">Совкомбанк</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-16' name='Tochka'>
+                                <input type="checkbox" id="bank-16" name="Tochka" />
                                 <label for="bank-16">Точка</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-17' name='VTB'>
+                                <input type="checkbox" id="bank-17" name="VTB" />
                                 <label for="bank-17">ВТБ</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-18' name='Tinkoff'>
+                                <input type="checkbox" id="bank-18" name="Tinkoff" />
                                 <label for="bank-18">Тинькофф</label>
                             </div>
                             <div class="form__row_horizont">
-                                <input type="checkbox" id='bank-19' name='MorskoyBank'>
+                                <input type="checkbox" id="bank-19" name="MorskoyBank" />
                                 <label for="bank-19">Морской банк</label>
                             </div>
-
                         </div>
                     </div>
                     <div class="form__row_horizont">
-                        <input type="checkbox" id='checkbox-privacy' name='checkbox' required>
-                        <label for="checkbox-privacy">Я принимаю 
-                            <a href="#">пользовательское соглашение</a> и даю согласие на обработку 
+                        <input type="checkbox" id="checkbox-privacy" name="checkbox" required />
+                        <label for="checkbox-privacy"
+                            >Я принимаю <a href="#">пользовательское соглашение</a> и даю согласие на обработку
                             <a href="#">персональных данных</a>
                         </label>
                     </div>

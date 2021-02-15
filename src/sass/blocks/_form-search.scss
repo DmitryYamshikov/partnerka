@@ -1,0 +1,26 @@
+.form-search {
+    width: 270px;
+    height: 30px;
+    position: relative;
+    input {
+        background: #ffffff;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 16px;
+        height: 100%;
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 25px;
+    }
+    button {
+        position: absolute;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        top:0;
+        border: none;
+        background-color: transparent;
+    }
+}

@@ -1,9 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
     @@include('./_head.html')
     <body>
         @@include('./_header.html')
         <div class="page-content">
             <div class="container">
                 <h1>Сотрудники</h1>
+                <div class="sotrudniki__header">
+                    <form action="" class="form-search">
+                        <input type="text" placeholder="Поиск..." name="search-text" />
+                        <button>
+                            <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 10 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.75001 1.25C2.36929 1.25 1.25 2.36929 1.25 3.75001C1.25 5.1307 2.36929 6.25001 3.75001 6.25001C5.1307 6.25001 6.25001 5.1307 6.25001 3.75001C6.25001 2.36929 5.1307 1.25 3.75001 1.25ZM0 3.75001C0 1.67893 1.67893 0 3.75001 0C5.82107 0 7.50001 1.67893 7.50001 3.75001C7.50001 4.5599 7.24326 5.30982 6.8067 5.92282L9.81695 8.93308C10.061 9.17714 10.061 9.57289 9.81695 9.81695C9.57289 10.061 9.17714 10.061 8.93308 9.81695L5.92282 6.8067C5.30982 7.24326 4.5599 7.50001 3.75001 7.50001C1.67893 7.50001 0 5.82107 0 3.75001Z"
+                                    fill="#4F4F4F"
+                                />
+                            </svg>
+                        </button>
+                    </form>
+                    <button class="btn sotrudniki__btn" call-modal>Добавить сотрудника</button>
+                </div>
+                <div class="table sotrudniki-table">
+                    <div class="table__title">
+                        <span data="id">ID</span>
+                        <span data="mail">E-mail</span>
+                        <span data="fio">ФИО</span>
+                        <span data="phone">Телефон</span>
+                        <span data="agent">Агент</span>
+                    </div>
+                    <div class="table__row">
+                        <span data="id">11021</span>
+                        <span data="mail">yuliya.ponomareva.ponomareva@inbox.ru</span>
+                        <span data="fio">Пономарева Ю. А.</span>
+                        <span data="phone">+7(967)486-60-42</span>
+                        <span data="agent">Иопенко А. В.</span>
+                    </div>
+                    <div class="table__row">
+                        <span data="id">11021</span>
+                        <span data="mail">yuliya.ponomareva.ponomareva@inbox.ru</span>
+                        <span data="fio">Пономарева Ю. А.</span>
+                        <span data="phone">+7(967)486-60-42</span>
+                        <span data="agent">Иопенко А. В.</span>
+                    </div>
+                    <div class="table__row">
+                        <span data="id">11021</span>
+                        <span data="mail">yuliya.ponomareva.ponomareva@inbox.ru</span>
+                        <span data="fio">Пономарева Ю. А.</span>
+                        <span data="phone">+7(967)486-60-42</span>
+                        <span data="agent">Иопенко А. В.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

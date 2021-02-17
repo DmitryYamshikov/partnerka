@@ -8,6 +8,7 @@
     font-family: "NotoSansJP";
     margin: 0;
     padding: 0;
+    outline: none !important;
 }
 
 body {
@@ -43,4 +44,5 @@ h1 {
 @import "blocks/docs-preview";
 @import "blocks/sotrudniki";
 @import "blocks/form-search";
-
+@import "blocks/pagination";
+@import "blocks/act";

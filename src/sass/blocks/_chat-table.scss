@@ -1,0 +1,29 @@
+.chat-table {
+    padding: 20px 14px 20px 20px;
+    /* .chat-table__wrapper */
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .chat-table__all-msg */
+
+    &__all-msg {
+        font-family: 'NotoSansJP';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+        align-self: flex-end;
+    }
+
+    /* .chat-table__msg-list */
+
+    &__msg-list {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+}

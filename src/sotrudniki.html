@@ -60,6 +60,24 @@
                 </div>
                 @@include('./_pagination.html')
             </div>
+            <div class="modal modal_add-person">
+                <h1>Добавление нового сотрудника</h1>
+                <div class="form form_add-person">
+                    <div class="form__title">Данные пользователя</div>
+                    <div class="form__row">
+                        <input class="form__input" type="text" name="name" placeholder="ФИО *" required>
+                    </div>
+                    <div class="form__row">
+                        <input class="form__input" type="text" name="phone" placeholder="Телефон *" required>
+                    </div>
+                    <div class="form__row">
+                        <input class="form__input" type="text" name="mail" placeholder="E-mail *" required>
+                    </div>
+                    <div class="form__row">
+                        <button class="btn">Сохранить</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="js/main.js"></script>
     </body>

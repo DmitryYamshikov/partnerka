@@ -1,0 +1,91 @@
+.info-table {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s linear;
+    padding: 0 20px;
+    /* .info-table__title */
+    &.active {
+        max-height: 1000px;
+        overflow: visible;
+        padding: 30px 20px;
+        border: 1px solid #0286f2;
+        background: #E2F2FF;
+    }
+    &__title {
+        font-family: "NotoSansJP";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        color: #242424;
+    }
+
+    /* .info-table__wrapper */
+
+    &__wrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* .info-table__col */
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 30%;
+        border-right: 1px solid #B1B1B1;
+        padding: 0 70px;
+        
+        &:last-child {
+            flex: 1 0 25%;
+            padding-right: 0;
+            border: none;
+        }
+        &:first-child {
+            flex: 1 0 25%;
+            padding-left: 0;
+        }
+    }
+
+    /* .info-table__col-name */
+
+    &__col-name {
+        font-family: "NotoSansJP";
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    /* .info-table__row */
+
+    &__row {
+        margin-top: 12px;
+        display: flex;
+        
+        
+    }
+
+    /* .info-table__name */
+
+    &__name {
+        font-family: "NotoSansJP";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        color: #000000;
+        min-width: 110px;
+        margin-right: 20px;
+    }
+
+    /* .info-table__value */
+
+    &__value {
+        font-family: "NotoSansJP";
+        font-size: 12px;
+        line-height: 17px;
+        color: #000000;
+        max-width: 170px;
+        width: 160px;
+    }
+}

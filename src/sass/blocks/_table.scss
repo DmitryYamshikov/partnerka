@@ -103,21 +103,125 @@
     }
 }
 .sotrudniki-table {
-    span[data=id]{
+    span[data="id"] {
         padding-left: 28px;
         flex: 0 0 16%;
     }
-    span[data=mail]{
+    span[data="mail"] {
         flex: 0 0 33%;
     }
-    span[data=fio]{
+    span[data="fio"] {
         flex: 0 0 21%;
     }
-    span[data=phone]{
+    span[data="phone"] {
         flex: 0 0 21%;
     }
-    span[data=agent]{
+    span[data="agent"] {
         padding-right: 12px;
         flex: 0 0 9%;
+    }
+}
+.aplication-table {
+    border: none;
+    box-shadow: none;
+    .table__title {
+        margin: 0 -10px;
+    }
+
+    span {
+        margin: 0 10px;
+    }
+    span[data="number"] {
+        padding-left: 10px;
+        flex: 0 0 3.4%;
+    }
+    span[data="info"] {
+        flex: 0 0 1.7%;
+    }
+    span[data="date"] {
+        flex: 0 0 8.1%;
+    }
+    span[data="author"] {
+        flex: 0 0 10.6%;
+    }
+    span[data="company"] {
+        flex: 0 0 15.7%;
+    }
+    span[data="bank"] {
+        flex: 0 0 9.8%;
+    }
+    span[data="status"] {
+        flex: 0 0 9.3%;
+    }
+    span[data="open-date"] {
+        flex: 0 0 9.4%;
+    }
+    span[data="rate"] {
+        flex: 0 0 5%;
+    }
+    span[data="files"] {
+        flex: 0 0 6%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    span[data="chat"] {
+        flex: 0 0 2.1%;
+        padding-right: 12px;
+    }
+    .table__content {
+        margin: 0 -10px;
+        border: 1px solid #b1b1b1;
+        border-bottom: none;
+        &:nth-child(2) {
+            margin-top: 20px;
+        }
+        &:last-child {
+            border-bottom: 1px solid #b1b1b1;
+        }
+    }
+    .table__row {
+        /* margin: 0 -10px; */
+        align-items: flex-start;
+        padding: 20px 0;
+        transition: all 0.3s linear;
+        border-radius: 0px;
+        &.active,
+        &:hover {
+            border: 1px solid #0286f2;
+            background: #e2f2ff;
+        }
+        span[data="chat"] {
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                svg {
+                    path {
+                        fill: #0874cc;
+                    }
+                }
+            }
+        }
+        span[data="info"] {
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                svg {
+                    path {
+                        fill: #0874cc;
+                    }
+                }
+            }
+            /* &:before {
+                display: block;
+                content: "";
+                width: 18px;
+                height: 23px;
+                background-image: url(../img/ico/info.svg);
+                background-repeat: no-repeat;
+                position: relative;
+                top: 1px;
+            } */
+        }
     }
 }

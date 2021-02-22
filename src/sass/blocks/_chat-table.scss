@@ -1,5 +1,16 @@
 .chat-table {
-    padding: 20px 14px 20px 20px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+    &.active {
+        background: #E2F2FF;
+        opacity: 1;
+        visibility: visible;
+        max-height: 1000px;
+        padding: 20px 14px 20px 20px;
+    }
+
     /* .chat-table__wrapper */
 
     &__wrapper {
@@ -10,13 +21,31 @@
     /* .chat-table__all-msg */
 
     &__all-msg {
-        font-family: 'NotoSansJP';
-        font-style: normal;
-        font-weight: normal;
+        cursor: pointer;
+        font-family: "NotoSansJP";
         font-size: 14px;
         line-height: 20px;
         color: #000000;
         align-self: flex-end;
+        position: relative;
+        padding-left: 25px;
+        &:before,
+        &:after {
+            display: block;
+            content:'';
+            position: absolute;
+            left:0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #000;
+        }
+        &:before {
+            width: 17px;height: 3px;
+        }
+        &:after {
+            left: 7px;
+            width: 3px;height: 17px;
+        }
     }
 
     /* .chat-table__msg-list */

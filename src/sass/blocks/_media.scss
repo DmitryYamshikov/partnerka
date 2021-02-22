@@ -1,0 +1,24 @@
+@mixin lg() {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@mixin md() {
+    .container {
+        max-width: 740px;
+    }
+}
+
+@mixin sm() {
+    .container {
+        max-width: 560px;
+    }
+}
+
+@mixin xs() {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}

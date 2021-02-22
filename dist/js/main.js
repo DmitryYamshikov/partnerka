@@ -85,6 +85,10 @@ window.addEventListener("DOMContentLoaded", () => {
                     this.classList.toggle('active');
                     this.nextSibling.classList.toggle('active');
                 }
+                if (e.target.closest('[data="chat"]')) {
+                    this.classList.toggle('active');
+                    this.nextSibling.nextSibling.classList.toggle('active');
+                }
             });
         });
     }

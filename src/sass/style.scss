@@ -10,18 +10,21 @@
     padding: 0;
     outline: none !important;
 }
-
+html {
+    overflow-x: hidden;
+}
 body {
     position: relative;
+    overflow-x: hidden;
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .page-content {
     position: relative;
     margin-top: 60px;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
 }
 h1 {
     font-weight: bold;
@@ -53,6 +56,7 @@ h1 {
 @import "blocks/info-table";
 @import "blocks/chat-table";
 @import "blocks/msg-item";
+@import "blocks/burger";
 
 
 

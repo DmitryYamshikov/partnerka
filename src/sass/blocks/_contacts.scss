@@ -5,6 +5,7 @@
     position: relative;
     padding-right: 15px;
     transition: all .3s linear;
+    
     &:after {
         transition: all .3s linear;
         display: block;
@@ -76,6 +77,42 @@
             background-image: url(../img/ico/mail2.svg);
             background-size: cover;
             top: calc(50% + 2px) !important;
+        }
+    }
+    &_mobile {
+        display: none;
+    }
+    @include sm() {
+        display: none;
+        &_mobile {
+            display: block;
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+            .contacts {
+                &__wrapper {
+                    width: 100%;
+                    visibility: visible;
+                    opacity: 1;
+                    position: static;
+                    background-color: transparent;
+                    box-shadow: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 25px;
+                    height: auto;
+                    a {
+                        margin: 10px 0;
+                        padding: 0;
+                        color:#fff;
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 .menu {
+    transition: all .3s linear;
     ul {
         margin: 0;
         padding: 0;
@@ -29,6 +30,23 @@
                 color: #2196f3;
                 border-bottom-color: #2196f3;
             }
+        }
+    }
+    @include lg() {
+        /* display: none; */
+        z-index: 1000;
+        position: absolute;
+        top:100%;
+        right:0;
+        background: #363740;
+        transform: translateX(100%);
+        ul {
+            flex-direction: column;
+            padding: 30px 40px;
+            margin:0;
+        }
+        &.active {
+            transform: translateX(0);
         }
     }
 }

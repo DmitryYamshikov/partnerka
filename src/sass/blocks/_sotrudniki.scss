@@ -5,4 +5,12 @@
         margin-top: 40px;
         align-items: center;
     }
+    @include xs() {
+        &__header {
+            flex-direction: column-reverse;
+            .btn {
+                margin-bottom: 15px;
+            }
+        }
+    }
 }

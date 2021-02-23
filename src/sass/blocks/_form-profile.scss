@@ -84,17 +84,7 @@
         color: #000000;
         padding: 8px 11px;
     }
-    input[type="checkbox"] {
-        display: none;
-        &:checked {
-            & + label {
-                &:after {
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-        }
-    }
+
     input[type="checkbox"] + label {
         font-size: 18px;
         line-height: 26px;
@@ -130,6 +120,17 @@
             background-repeat: no-repeat;
         }
     }
+    input[type="checkbox"] {
+        display: none;
+        &:checked {
+            & + label {
+                &:after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
     .btn {
         margin-top: 20px;
         width: 210px;
@@ -148,13 +149,13 @@
         &__tabs-wrapper {
             padding: 40px 5px 55px 5px;
         }
-        input[type='text'] {
+        input[type="text"] {
             font-size: 12px;
         }
-        input[type=checkbox]+label {
+        input[type="checkbox"] + label {
             font-size: 16px;
         }
-        input[type='text'][name='Bank-name'] {
+        input[type="text"][name="Bank-name"] {
             max-width: 80%;
         }
     }

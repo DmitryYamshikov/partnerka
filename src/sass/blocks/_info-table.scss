@@ -88,4 +88,25 @@
         max-width: 170px;
         width: 160px;
     }
+    @include lg() {
+        &__col {
+            padding: 0px 15px;
+        }
+    }
+    @include md() {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__col {
+            border-right: none;
+            margin: 0;
+            margin-bottom: 30px;
+            padding:0;
+        }
+    }
+    @include xs() {
+        &__name {
+            min-width: 98px;
+        }
+    }
 }

@@ -24,7 +24,13 @@
         align-items: center;
         justify-content: center;
         transform: translate(-50%, -50%);
-        background: #FF5F5F;
+        background: #ff5f5f;
         border-radius: 100%;
+    }
+    @include xs() {
+        &__ico {
+            top: 10px;
+            left: 15px;
+        }
     }
 }

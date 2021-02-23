@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (loginForm) {
         loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            location.href = '/zayavki.html';
+            location.href = 'zayavki.html';
         });
     }
     // регулирование ширину инпутов
@@ -70,7 +70,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const btnCallModal = document.querySelector('[call-modal]');
 
     if (btnCallModal) {
-        btnCallModal.addEventListener('click', ()=>{
+        btnCallModal.addEventListener('click', () => {
             openForm('modal_add-person');
         });
     }
@@ -78,8 +78,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const aplicTableRow = document.querySelectorAll('.aplication-table .table__row');
 
     if (aplicTableRow) {
-        aplicTableRow.forEach(item=> {
-            item.addEventListener('click', function(e) {
+        aplicTableRow.forEach(item => {
+            item.addEventListener('click', function (e) {
                 e.stopPropagation();
                 if (e.target.closest('[data="info"]')) {
                     this.classList.toggle('active');
@@ -96,9 +96,46 @@ window.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
     if (burger) {
-        burger.addEventListener('click', ()=>{
+        burger.addEventListener('click', () => {
             burger.classList.toggle('active');
             menu.classList.toggle('active');
         });
+    }
+    if (window.innerWidth <= 768) {
+        const sotrTableMobile = document.querySelector('.sotrudniki-table_mobile');
+        if (sotrTableMobile) {
+            sotrTableMobile.addEventListener('click', (e) => {
+                if (e.target.closest('.table__title')) {
+                    (e.target).parentElement.classList.toggle('active');
+                    /* e.stopPropagation();
+                    console.log(e.currentTarget);
+                    console.log(e.target); */
+                }
+            });
+        }
+    }
+    if (window.innerWidth <= 992) {
+        const sotrTableMobile = document.querySelector('.aplication-table_mobile');
+        if (sotrTableMobile) {
+            sotrTableMobile.addEventListener('click', function (e) {
+                if (e.target.closest('.table__title')) {
+                    (e.target).parentElement.classList.toggle('active');
+                }
+
+            });
+            const aplItem = sotrTableMobile.querySelectorAll('.aplication-table__item');
+            aplItem.forEach(item => {
+                item.addEventListener("click", function (e) {
+                    if (e.target.closest('span[data="info"]')) {
+                        e.stopPropagation();
+                        this.querySelector('.info-table').classList.toggle('active');
+                    }
+                    if (e.target.closest('span[data="chat"]')) {
+                        e.stopPropagation();
+                        this.querySelector('.chat-table').classList.toggle('active');
+                    }
+                });
+            });
+        }
     }
 });

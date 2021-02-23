@@ -1,13 +1,14 @@
 .chat-table {
+    overflow: hidden;
     max-height: 0;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s linear;
     &.active {
-        background: #E2F2FF;
+        background: #e2f2ff;
         opacity: 1;
         visibility: visible;
-        max-height: 1000px;
+        max-height: unset;
         padding: 20px 14px 20px 20px;
     }
 
@@ -32,19 +33,21 @@
         &:before,
         &:after {
             display: block;
-            content:'';
+            content: "";
             position: absolute;
-            left:0;
+            left: 0;
             top: 50%;
             transform: translateY(-50%);
             background-color: #000;
         }
         &:before {
-            width: 17px;height: 3px;
+            width: 17px;
+            height: 3px;
         }
         &:after {
             left: 7px;
-            width: 3px;height: 17px;
+            width: 3px;
+            height: 17px;
         }
     }
 
@@ -54,5 +57,44 @@
         margin-top: 25px;
         display: flex;
         flex-direction: column;
+    }
+    &__msg-send {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        textarea {
+            font-family: 'NotoSansJP';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            color: #000000;
+            padding: 9px 20px;
+            margin-right: 30px;
+            border: none;
+            flex: 1 0 auto;
+            max-width: 978px;
+            height: 75px;
+            background: #ffffff;
+            border-radius: 4px;
+            resize: none;
+        }
+        .btn {
+            width: 126px;
+            height: 50px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    @include xs() {
+        &__msg-send {
+            flex-direction: column;
+            textarea {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
     }
 }

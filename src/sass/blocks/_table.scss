@@ -157,17 +157,49 @@
     }
     &_mobile {
         flex-direction: column;
-        display: flex;
+        display: none;
         list-style-type: none;
         .sotrudniki-table__person {
+            &.active {
+                .table__title {
+                    background: #008dff;
+                    &:before {
+                        transform: rotate(-135deg);
+                        top: 16px;
+                    }
+                }
+                ul {
+                    max-height: 1000px;
+                    li {
+                        padding: 10px 20px;
+                    }
+                }
+            }
             .table__title {
                 padding: 10px 20px;
+                position: relative;
+                cursor: pointer;
+                &:before {
+                    transition: all 0.3s linear;
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    width: 15px;
+                    height: 15px;
+                    border-bottom: 3px solid #fff;
+                    border-right: 3px solid #fff;
+                    transform: rotate(45deg);
+                }
             }
             ul {
+                overflow: hidden;
                 list-style-type: none;
+                max-height: 0;
                 li {
                     display: flex;
-                    padding: 10px 20px;
+                    padding: 0 20px;
                     border-bottom: 1px solid #b1b1b1;
                     &:last-child {
                         border: none;
@@ -284,6 +316,102 @@
                     }
                 }
             }
+        }
+    }
+    &_mobile {
+        border: 1px solid #b1b1b1;
+        display: none;
+        list-style-type: none;
+        .aplication-table__item {
+            background: #E2F2FF;
+            &.active {
+                .table__title {
+                    /* background: #008dff; */
+                    &:before {
+                        transform: rotate(-135deg);
+                        top: 16px;
+                    }
+                }
+                ul {
+                    max-height: 1000px;
+                    /* li {
+                        padding: 10px 20px;
+                    } */
+                }
+            }
+        }
+        .table__title {
+            padding: 10px 15px;
+            background-color: transparent;
+            margin: 0;
+            border-bottom: 1px solid #b1b1b1;
+            position: relative;
+            &:before {
+                transition: all 0.3s linear;
+                display: block;
+                content: "";
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                width: 15px;
+                height: 15px;
+                border-bottom: 3px solid #000;
+                border-right: 3px solid #000;
+                transform: rotate(45deg);
+            }
+            span {
+                cursor: pointer;
+                &:hover {
+                    svg {
+                        path {
+                            fill: #004b88;
+                        }
+                    }
+                }
+            }
+        }
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #242424;
+        }
+        ul {
+            overflow: hidden;
+            max-height: 0;
+            list-style-type: none;
+            li {
+                display: flex;
+                align-items: center;
+                padding: 10px 15px;
+                border-bottom: 1px solid #b1b1b1;
+                &:last-child {
+                    border: none;
+                }
+
+                span {
+                    &:first-child {
+                        width: 30%;
+                        margin-right: 15px;
+                    }
+                    &:last-child {
+                        width: 70%;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    @include lg() {
+        span {
+            margin: 0 7px;
+        }
+        
+    }
+    @include md() {
+        display: none;
+        &_mobile {
+            display: flex;
         }
     }
 }

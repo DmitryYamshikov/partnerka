@@ -34,9 +34,25 @@
                     <div class="filter">
                         <div class="filter__title">Фильтр</div>
                         <form class="filter-form">
-                            <input type="text" />
-                            <input type="text" />
+                            <input type="text" placeholder="Компания, ИНН, автор" />
+                            <input type="date" placeholder="Период" />
+                            <select name="status">
+                                <option value="Статус">Статус</option>
+                                <option value="">Тест1</option>
+                                <option value="">Тест2</option>
+                                <option value="">тест3</option>
+                            </select>
+                            <select name="bank" placeholder="банк">
+                                <option selected>Банк</option>
+                                <option>Тест1</option>
+                                <option>Тест2</option>
+                                <option>тест3</option>
+                            </select>
                         </form>
+                    </div>
+                    <div class="aplication-list__option-export">
+                        <span>Экспорт заявок</span>
+                        <a href="#" download></a>
                     </div>
                 </div>
                 <div class="table aplication-table">
@@ -199,6 +215,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <form class="chat-table__msg-send">
+                                    <textarea name="msg-text"></textarea>
+                                    <div class="btn">Отправить</div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -500,8 +520,161 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+                <ul class="table aplication-table aplication-table_mobile">
+                    <li class="aplication-table__item">
+                        <div class="table__title">
+                            <span data="id">№ 11021</span>
+                            <span data="info"
+                                ><svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M11.4286 14.2143C11.4286 14.4152 11.2723 14.5714 11.0714 14.5714H6.07143C5.87054 14.5714 5.71429 14.4152 5.71429 14.2143V12.4286C5.71429 12.2277 5.87054 12.0714 6.07143 12.0714H7.14286V8.5H6.07143C5.87054 8.5 5.71429 8.34375 5.71429 8.14286V6.35714C5.71429 6.15625 5.87054 6 6.07143 6H9.64286C9.84375 6 10 6.15625 10 6.35714V12.0714H11.0714C11.2723 12.0714 11.4286 12.2277 11.4286 12.4286V14.2143ZM10 4.21429C10 4.41518 9.84375 4.57143 9.64286 4.57143H7.5C7.29911 4.57143 7.14286 4.41518 7.14286 4.21429V2.42857C7.14286 2.22768 7.29911 2.07143 7.5 2.07143H9.64286C9.84375 2.07143 10 2.22768 10 2.42857V4.21429ZM17.1429 8.85714C17.1429 4.125 13.3036 0.285713 8.57143 0.285713C3.83929 0.285713 0 4.125 0 8.85714C0 13.5893 3.83929 17.4286 8.57143 17.4286C13.3036 17.4286 17.1429 13.5893 17.1429 8.85714Z"
+                                        fill="#FF5F5F"
+                                    />
+                                </svg>
+                            </span>
+                            <span data="chat"
+                                ><svg
+                                    width="20"
+                                    height="17"
+                                    viewBox="0 0 20 17"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M15.7143 6.42857C15.7143 3.27009 12.1987 0.714285 7.85714 0.714285C3.51563 0.714285 0 3.27009 0 6.42857C0 8.23661 1.16071 9.85491 2.96875 10.904C2.58929 11.8304 2.09821 12.2656 1.66295 12.7567C1.54018 12.9018 1.39509 13.0357 1.43973 13.2478C1.47321 13.4375 1.62946 13.5714 1.79688 13.5714C1.80804 13.5714 1.8192 13.5714 1.83036 13.5714C2.16518 13.5268 2.48884 13.471 2.79018 13.3929C3.91741 13.1027 4.96652 12.6228 5.89286 11.9643C6.51786 12.0759 7.17634 12.1429 7.85714 12.1429C12.1987 12.1429 15.7143 9.58705 15.7143 6.42857ZM20 9.28571C20 7.42187 18.7723 5.77009 16.8862 4.73214C17.0536 5.27902 17.1429 5.84821 17.1429 6.42857C17.1429 8.42634 16.1161 10.2679 14.2522 11.6295C12.5223 12.8795 10.2567 13.5714 7.85714 13.5714C7.53348 13.5714 7.19866 13.5491 6.875 13.5268C8.27009 14.442 10.1228 15 12.1429 15C12.8237 15 13.4821 14.933 14.1071 14.8214C15.0335 15.4799 16.0826 15.9598 17.2098 16.25C17.5112 16.3281 17.8348 16.3839 18.1696 16.4286C18.3482 16.4509 18.5156 16.3058 18.5603 16.1049C18.6049 15.8929 18.4598 15.7589 18.3371 15.6138C17.9018 15.1228 17.4107 14.6875 17.0313 13.7612C18.8393 12.7121 20 11.1049 20 9.28571Z"
+                                        fill="#4F4F4F"
+                                    />
+                                </svg>
+                            </span>
+                        </div>
+                        <ul>
+                            <li><span>Дата</span><span>25.11.2020</span></li>
+                            <li><span>Автор</span><span>Иопенко Антон Валериевич</span></li>
+                            <li><span>Компания</span><span>Компания</span></li>
+                            <li><span>Банк</span><span>Совкомбанк</span></li>
+                            <li><span>Статус</span><span>Нет связи с клиентом</span></li>
+                            <li><span>Дата открытия</span><span>25.11.2020</span></li>
+                            <li><span>Ставка</span><span>3500 ₽</span></li>
+                            <li><span>Файлы</span><span>3</span></li>
+                        </ul>
+                        <div class="table__info info-table">
+                            <div class="info-table__title">Заявка №11021</div>
+                            <div class="info-table__wrapper">
+                                <div class="info-table__col">
+                                    <div class="info-table__col-name">Параметры заявки</div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Банк</div>
+                                        <div class="info-table__value">Совкомбанк</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Город</div>
+                                        <div class="info-table__value">Тольятти</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Дата создания</div>
+                                        <div class="info-table__value">27.10.2020</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Комментарий</div>
+                                        <div class="info-table__value"></div>
+                                    </div>
+                                </div>
+                                <div class="info-table__col">
+                                    <div class="info-table__col-name">Клиент</div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Адрес</div>
+                                        <div class="info-table__value">Совкомбанк</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">ИНН</div>
+                                        <div class="info-table__value">634507194099</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Наименование</div>
+                                        <div class="info-table__value">ИП Сидорова Анастасия Араратовна</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">ОГРН</div>
+                                        <div class="info-table__value">320631300117149</div>
+                                    </div>
+                                </div>
+                                <div class="info-table__col">
+                                    <div class="info-table__col-name">Контакты</div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">ФИО</div>
+                                        <div class="info-table__value">Сидорова Анастасия Араратовна</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">Телефон</div>
+                                        <div class="info-table__value">+7(927) 729-43-68</div>
+                                    </div>
+                                    <div class="info-table__row">
+                                        <div class="info-table__name">E-mail</div>
+                                        <div class="info-table__value">nastena-sidorova-99@bk.ru</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table__chat chat-table">
+                            <div class="chat-table__wrapper">
+                                <div class="chat-table__all-msg">Показать все сообщения</div>
+                                <div class="chat-table__msg-list">
+                                    <div class="msg-item msg-item_answer">
+                                        <div class="msg-item__author">Иопенко Антон Валериевич</div>
+                                        <div class="msg-item__body">
+                                            <div class="msg-item__text">
+                                                Добрый день, прошу у данного клиента сменить номер на 8(902)2358024 по
+                                                всем отправленный банкам по заявкам
+                                            </div>
+                                            <div class="msg-item__date">10.12.2020 10:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="msg-item">
+                                        <div class="msg-item__author">Иопенко Антон Валериевич</div>
+                                        <div class="msg-item__body">
+                                            <div class="msg-item__text">
+                                                Добрый день, прошу у данного клиента сменить номер на 8(902)2358024 по
+                                                всем отправленный банкам по заявкам
+                                            </div>
+                                            <div class="msg-item__date">10.12.2020 10:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="msg-item msg-item_answer">
+                                        <div class="msg-item__author">Иопенко Антон Валериевич</div>
+                                        <div class="msg-item__body">
+                                            <div class="msg-item__text">
+                                                Добрый день, прошу у данного клиента сменить номер на 8(902)2358024 по
+                                                всем отправленный банкам по заявкам
+                                            </div>
+                                            <div class="msg-item__date">10.12.2020 10:30</div>
+                                        </div>
+                                    </div>
+                                    <div class="msg-item">
+                                        <div class="msg-item__author">Иопенко Антон Валериевич</div>
+                                        <div class="msg-item__body">
+                                            <div class="msg-item__text">
+                                                Добрый день, прошу у данного клиента сменить номер на 8(902)2358024 по
+                                                всем отправленный банкам по заявкам
+                                            </div>
+                                            <div class="msg-item__date">10.12.2020 10:30</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="chat-table__msg-send">
+                                    <textarea name="msg-text"></textarea>
+                                    <div class="btn">Отправить</div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <script src="js/main.js"></script>

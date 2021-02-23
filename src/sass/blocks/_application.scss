@@ -1,0 +1,43 @@
+.aplication-list {
+    /* .aplication-list__options */
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    /* .aplication-list__option-export */
+
+    &__option-export {
+        
+        display: flex;
+        align-items: center;
+        span {
+            font-family: 'NotoSansJP';
+            font-size: 12px;
+            line-height: 17px;
+            color: #000000;
+            margin-right: 10px;
+        }
+        a {
+            height: 30px;
+            width: 27px;
+            background-image: url(../img/ico/export.svg);
+        }
+    }
+    @include md() {
+        &__option-export {
+            margin-bottom: 15px;
+            span {
+                white-space: nowrap;
+            }
+        }
+    }
+    @include xs() {
+        &__options {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

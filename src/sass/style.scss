@@ -32,6 +32,10 @@ h1 {
     line-height: 72px;
     text-align: center;
     color: #0874cc;
+    @include xs() {
+        font-size: 35px;
+        line-height: 45px;
+    }
 }
 @import "blocks/btn";
 @import "blocks/enter";
@@ -57,8 +61,5 @@ h1 {
 @import "blocks/chat-table";
 @import "blocks/msg-item";
 @import "blocks/burger";
-
-
-
 
 @import "blocks/media";

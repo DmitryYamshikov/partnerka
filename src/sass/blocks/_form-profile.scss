@@ -1,6 +1,6 @@
 .form-profile {
     /* .form-profile__tabs-header */
-    
+
     &__tabs-header {
         width: 100%;
         display: flex;
@@ -133,5 +133,29 @@
     .btn {
         margin-top: 20px;
         width: 210px;
+    }
+    @include lg() {
+        .form-profile {
+            &__row {
+                flex-wrap: wrap;
+            }
+            &__tabs-wrapper {
+                height: auto;
+            }
+        }
+    }
+    @include xs() {
+        &__tabs-wrapper {
+            padding: 40px 5px 55px 5px;
+        }
+        input[type='text'] {
+            font-size: 12px;
+        }
+        input[type=checkbox]+label {
+            font-size: 16px;
+        }
+        input[type='text'][name='Bank-name'] {
+            max-width: 80%;
+        }
     }
 }

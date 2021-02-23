@@ -59,6 +59,39 @@
 
     /* .profile__form */
 
-    &__form {
+    @include lg() {
+        &__right {
+            min-width: unset;
+        }
+    }
+    @include md() {
+        flex-direction: column;
+        align-items: center;
+        &__left {
+            margin-right: 0;
+            margin-bottom: 30px;
+            flex-direction: row;
+            width: 100%;
+            max-width: unset;
+            flex: unset;
+            height: 228px;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+    @include xs() {
+        &__left {
+            flex-direction: column;
+            height: auto;
+        }
+        &__descr {
+            & > * {
+                margin-bottom: 10px;
+            }
+        }
+        input[type='text'] {
+            max-width: 100%;
+        }
     }
 }

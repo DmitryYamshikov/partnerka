@@ -99,6 +99,65 @@
             font-size: 24px;
             line-height: 35px;
         }
+        @include sm() {
+            .form__row_horizont {
+                padding: 0 20px;
+            }
+            .form {
+                &__body {
+                    flex-direction: column;
+                }
+                &__left {
+                    width: 100%;
+                    border-right: none;
+                    .form__row {
+                        padding: 0 20px !important;
+                    }
+                    .form__row_horizont {
+                        padding: 0 20px !important;
+                    }
+                    .btn.file {
+                        height: auto;
+                    }
+                }
+                &__descr {
+                    span {
+                        left: 0;
+                    }
+                    ol {
+                        padding-left: 17px;
+                    }
+                }
+                &__right {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .form__row {
+                        padding: 0 20px !important;
+                        &:first-child {
+                            width: 100%;
+                        }
+                        &_horizont {
+                            width: 45%;
+                            padding: 0 20px !important;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        @include xs() {
+            .form__row_horizont {
+                flex-wrap: wrap;
+            }
+            .form {
+                &__right {
+                    .form__row_horizont {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
     &__descr {
         span {
@@ -131,10 +190,10 @@
             align-self: flex-start;
         }
         @include sm() {
-            max-width:95%;
+            max-width: 95%;
         }
         @include xs() {
-            max-width:100%;
+            max-width: 100%;
         }
     }
     &__label {
@@ -209,8 +268,6 @@
             max-width: 95%;
         }
     }
-
-
 
     &__title {
         height: 155px;

@@ -82,10 +82,13 @@ window.addEventListener("DOMContentLoaded", () => {
             item.addEventListener('click', function (e) {
                 e.stopPropagation();
                 if (e.target.closest('[data="info"]')) {
+                    console.log(e.target);
+                    e.target.classList.toggle('active');
                     this.classList.toggle('active');
                     this.nextSibling.classList.toggle('active');
                 }
                 if (e.target.closest('[data="chat"]')) {
+                    e.target.classList.toggle('active');
                     this.classList.toggle('active');
                     this.nextSibling.nextSibling.classList.toggle('active');
                 }
@@ -137,5 +140,27 @@ window.addEventListener("DOMContentLoaded", () => {
                 });
             });
         }
+    }
+
+    //цветовой индикатор статуса
+    const zayavkiStatus = document.querySelectorAll('.aplication-table span[data="status"]');
+    if (zayavkiStatus) {
+        zayavkiStatus.forEach(item=>{
+            let itemStatus = item.textContent.toLowerCase();
+            switch (itemStatus) {
+                case 'нет связи с клиентом':
+                    item.setAttribute('data-status', '1');
+                    break;
+                case 'в работе':
+                    item.setAttribute('data-status', '2');
+                    break;
+                case 'счет открыт':
+                    item.setAttribute('data-status', '3');
+                    break;
+                case 'отказ банка':
+                    item.setAttribute('data-status', '4');
+                    break;
+            }
+        });
     }
 });

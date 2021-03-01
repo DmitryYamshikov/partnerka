@@ -5,10 +5,10 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 -4px;
+        /* margin: 0 -4px; */
         span {
             transition: all 0.3s linear;
-            margin: 0 4px;
+            margin-right: 4px;
             flex: 1 0 auto;
             height: 40px;
             background: #e2f2ff;
@@ -21,6 +21,9 @@
             font-size: 16px;
             line-height: 23px;
             color: #242424;
+            &:last-child {
+                margin: 0;
+            }
             &:hover {
                 background: #0874cc;
                 color: #ffffff;

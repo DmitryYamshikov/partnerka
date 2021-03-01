@@ -55,8 +55,7 @@
                 content: "";
                 position: absolute;
                 left: 0;
-                top: 50%;
-                transform: translateY(-50%);
+                top: 5px;
                 height: 9px;
                 width: 8.5px;
                 background-image: url(../img/ico/download.svg);
@@ -68,10 +67,11 @@
     .table {
         &__title,
         &__row {
+
             display: flex;
             background: #0874cc;
             border-radius: 3px 3px 0px 0px;
-            min-height: 40px;
+            min-height: 55px;
             span {
                 padding: 12px 24px 12px 24px;
                 font-weight: 500;
@@ -110,9 +110,9 @@
                     padding: 12px 10px 12px 10px;
                     a {
                         font-size: 10px;
-                        padding-left: 0;
+                        /* padding-left: 0; */
                         &:before {
-                            display: none;
+                            /* display: none; */
                         }
                     }
                 }
@@ -160,6 +160,10 @@
         display: none;
         list-style-type: none;
         .sotrudniki-table__person {
+            margin-bottom: 1px;
+            &:last-child {
+                margin:0;
+            }
             &.active {
                 .table__title {
                     background: #008dff;
@@ -256,6 +260,7 @@
     }
     span[data="status"] {
         flex: 0 0 9.3%;
+        position: relative;
     }
     span[data="open-date"] {
         flex: 0 0 9.4%;
@@ -305,6 +310,16 @@
                     }
                 }
             }
+            svg.active {
+                path {
+                    fill: #0874cc;
+                }
+            }
+            svg {
+                path.active {
+                    fill: #0874cc;
+                }
+            }
         }
         span[data="info"] {
             cursor: pointer;
@@ -316,6 +331,50 @@
                     }
                 }
             }
+
+            svg.active {
+                path {
+                    fill: #0874cc;
+                }
+            }
+            svg {
+                path.active {
+                    fill: #0874cc;
+                }
+            }
+        }
+        span[data="status"] {
+            &:before {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -15px;
+                width: 10px;
+                height: 10px;
+                background-color: #5fb100;
+                content: "";
+                border-radius: 100%;
+            }
+            &[data-status="1"] {
+                &:before {
+                    background: #a9a9a9;
+                }
+            }
+            &[data-status="2"] {
+                &:before {
+                    background: #0874cc;
+                }
+            }
+            &[data-status="3"] {
+                &:before {
+                    background: #5fb100;
+                }
+            }
+            &[data-status="4"] {
+                &:before {
+                    background: #eb5757;
+                }
+            }
         }
     }
     &_mobile {
@@ -323,7 +382,7 @@
         display: none;
         list-style-type: none;
         .aplication-table__item {
-            background: #E2F2FF;
+            background: #e2f2ff;
             &.active {
                 .table__title {
                     /* background: #008dff; */
@@ -376,6 +435,42 @@
             line-height: 20px;
             color: #242424;
         }
+        span[data="status"] {
+            flex: unset;
+            padding-left: 15px;
+            &:before {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0px;
+                width: 10px;
+                height: 10px;
+                background-color: #5fb100;
+                content: "";
+                border-radius: 100%;
+            }
+            &[data-status="1"] {
+                &:before {
+                    background: #a9a9a9;
+                }
+            }
+            &[data-status="2"] {
+                &:before {
+                    background: #0874cc;
+                }
+            }
+            &[data-status="3"] {
+                &:before {
+                    background: #5fb100;
+                }
+            }
+            &[data-status="4"] {
+                &:before {
+                    background: #eb5757;
+                }
+            }
+            ////gggggggggggg
+        }
         ul {
             overflow: hidden;
             max-height: 0;
@@ -406,7 +501,6 @@
         span {
             margin: 0 7px;
         }
-        
     }
     @include md() {
         display: none;

@@ -49,6 +49,16 @@
             width: 3px;
             height: 17px;
         }
+        &:hover {
+            color:#0286f2;
+            &:after,
+            &:before {
+                background-color: #0286f2;
+            }
+        }
+        @include md() {
+            align-self: flex-start;
+        }
     }
 
     /* .chat-table__msg-list */

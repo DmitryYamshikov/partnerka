@@ -19,9 +19,14 @@
         box-sizing: border-box;
         border-radius: 4px;
         padding: 5px 15px;
+        font-size: 14px;
     }
     input[type="text"] {
         width: 267px;
+        background-image: url(../img/ico/lupa.svg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 98%;
     }
     @include lg() {
         input[type="text"] {
